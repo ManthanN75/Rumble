@@ -3,13 +3,11 @@ import webbrowser
 import pyttsx3
 import music_library
 import requests
-import time
-import json  #working with json
+import time  #working with json
 from gtts import gTTS
 import pygame
 import os
 import google_search
-from pytube import YouTube
 
 #pip install pocketsphinx(but removed later because it was not as efficient)
 r = sr.Recognizer()
@@ -54,7 +52,7 @@ def processCommand(c):
     elif "open movie themes on guitar playlist" in command:
         webbrowser.open("https://www.youtube.com/playlist?list=PL-RYb_OMw7GeqRwGUiesAvVd0uP23j3Iy") 
     elif "news" in command or "tell me the news" in command:
-        r = requests.get(f"https://newsapi.org/v2/top-headlines?country=us&apiKey={newsapi}")
+        r = requests.get(f"https://newsapi.org/v2/top-headlines?country=us&apiKey={newsapi}", timeout=10)
         if r.status_code == 200:
             data = r.json()
         # Extract and print the headlines
