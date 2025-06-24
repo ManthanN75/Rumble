@@ -1,7 +1,7 @@
 # # deepSeek.py
 # import requests
 
-# api_key = "sk-0b5ed2fcc9aa4cbb839279976139a1f5"
+# api_key = "mk-0bxxsssssssseeeeeeeeeeeeeexxxxxxxx"
 
 # def search_deepseek(query, api_key):  # Accept both query and api_key
 #     """

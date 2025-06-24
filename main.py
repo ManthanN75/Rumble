@@ -12,12 +12,12 @@ import google_search
 #pip install pocketsphinx(but removed later because it was not as efficient)
 r = sr.Recognizer()
 engine = pyttsx3.init()
-newsapi = "6f1376b73cc14aa8962817cbf67e5d69"
+newsapi = "xxxxxxxxxxxxxxxxxxxxxxxxxx"
 r.energy_threshold = 300 #Adjust as needed (Try 300-400)
 r.dynamic_energy_threshold = True  # Allow automatic adjustment
 
-google_api_key = "AIzaSyCpeGR4jd5BYcpbEvqwotHco0cMpdmA5bs"  # Replace with Google API key
-google_cx = "b724813aa0fa2456a"  # Replace with your Search Engine ID"
+google_api_key = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"  # Replace with Google API key
+google_cx = "xxxxxxxxxxxxxxxxxxxxxxx"  # Replace with your Search Engine ID"
 # def speak(text):
 #     engine.say(text)
 #     engine.runAndWait()
